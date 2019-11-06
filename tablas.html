@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tablas</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="Recursos/img/cris.ico">
+        <link rel="stylesheet" href="Recursos/css/index.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- Datatable CSS -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+        <!-- Font Awesome -->
+        <!-- <link rel="stylesheet" type="text/css" href="Recursos/fontawesome/css/all.css"> -->
+        <script src="https://kit.fontawesome.com/15bc53113c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron" id="tablas">
+                <h1 id="textojumbotron">Base de datos</h1>   
+            </div>
+            <div class="card text-white bg-secondary border-dark mb-3">
+                <div class="card-header bg-dark">Tablas maestras</div>
+                <div class="card-body">
+                    <div class="form-group" id="opciones">
+                        <div class="form-group">
+                            <a class="btn btn-dark btn-lg" href="Vistas/indexrol.php" role="button">Roles</a>
+                            <a class="btn btn-dark btn-lg" href="Vistas/indexciudad.php" role="button">Ciudades</a>
+                            <a class="btn btn-dark btn-lg" href="Vistas/indexpais.php" role="button">Países</a>
+                            <a class="btn btn-dark btn-lg" href="Vistas/indextienda.php" role="button">Tiendas</a>
+                            <a class="btn btn-dark btn-lg" href="Vistas/indexcliente.php" role="button">Clientes</a>
+                            <!-- <a class="btn btn-dark btn-lg" href="Vistas/indexidioma.php" role="button">Peliculas</a> -->
+                            <a class="btn btn-dark btn-lg" href="Vistas/indexidioma.php" role="button">Idiomas</a>
+                            <a class="btn btn-dark btn-lg" href="Vistas/indexcategoria.php" role="button">Categorías</a>
+                            <a class="btn btn-dark btn-lg" href="Vistas/indexinventario.php" role="button">Inventario</a>
+                        </div>
+                        <div class="form-group">
+                            <!-- <a class="btn btn-dark btn-lg" href="Vistas/indexempleado.php" role="button">Empelados</a> -->
+                            <a class="btn btn-dark btn-lg" href="Vistas/indexprestamo.php" role="button">Prestamos</a>
+                            <a class="btn btn-dark btn-lg" href="Vistas/indexpago.php" role="button">Pago de prestamos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="abrir">
+                    <div class="card-header bg-dark" id="titulo"></div>
+                    <div class="card-body bg-light text-secondary" id="contenedor">
+                        <div class="form-group" id="contenido"></div>
+                    </div> 
+                </div>  
+            </div>      
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- Librearía para las funcionalidades de la tabla -->
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>  
+        <!-- Librería para las alertas alertify -->
+        <link rel="stylesheet" type="text/css" href="Recursos/alertify/css/alertify.css">
+        <link rel="stylesheet" type="text/css" href="Recursos/alertify/css/themes/bootstrap.css">
+        <script src="Recursos/alertify/alertify.js"></script>
+        <!-- Tempus Dominus -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+        <!-- Funciones de Lógica de negocio -->
+        <script src="Funciones/funcionesJquery.js"></script>
+        <script>        
+            $(document).ready(Inicio);
+        </script>
+    </body>
+</html>
