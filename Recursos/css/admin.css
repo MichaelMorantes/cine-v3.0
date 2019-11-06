@@ -1,0 +1,8 @@
+.skin-blue .sidebar-menu>li.header {
+    color: white;
+    background: #3093F0;
+}
+
+.box-body #tabla a {
+	margin-right: 10px;
+}
